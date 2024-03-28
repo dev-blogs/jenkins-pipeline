@@ -24,5 +24,12 @@ pipeline {
 				echo 'End of stage Deploy'
 			}
 		}
+		stage ('4-Test-Deploy') {
+			steps {
+				echo 'Start of stage Test-Deploy'
+				echo 'Testing deployment...'
+				echo 'End of stage Test-Deploy'
+			}
+		}
 	}
 }
